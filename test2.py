@@ -7,4 +7,4 @@ for x in a:
     print(x)
 
 
-
+c = (1, 2, "f", "h", "q")
