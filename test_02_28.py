@@ -39,7 +39,7 @@ print(s_values)
 
 o = 0
 
-print('-----------------------')
+print('-----------------------while1')
 while o < len(s):
     if s_keys[o] == 'a':
         break
@@ -49,28 +49,37 @@ while o < len(s):
 
     #print(list(s.keys()[o]))
     #print(list(s.values())[o]
-print('------------------------')
-
+print('------------------------while2')
+print(s_values)
+print(s_keys)
+o = 0
 while o < len(s):
     if s_values[o] == 20:
-        continue
+        o += 1
+        continue 
     print(s[s_keys[o]])
     print(s_keys[o])
     o += 1
 
 
-print('------------------------')
+print('-------------------------while3')
+o = -1
+while o < (len(s)-1):
+    o += 1
+    if  s_values[o] == 20:
+        continue
+    print(s[s_keys[o]])
+    print(s_keys[o])
+
+
+
+
+print('------------------------for')
 
 for x in s_keys:
     if x == 'a':
         break
     print(s[x])
     print(x)
-
-
-
-
-
-
 
 
