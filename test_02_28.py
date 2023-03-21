@@ -18,7 +18,7 @@ while x < 5:
 print('---------------------------------------------------------------')
 
 w = 0
-while w < len(a):
+while w < (a):
     if a[w] in ['l', 's']:
         w += 1
         continue
@@ -74,12 +74,35 @@ while o < (len(s)-1):
 
 
 
-print('------------------------for')
+print('------------------------')
 
-for x in s_keys:
-    if x == 'a':
+
+
+#x_keys = list(x.keys())
+#print(x_keys)
+#x_values = list(x.values())
+#print(p_values)
+p = ['d', 'b', 'c', 'a', 'e']
+x = {p[0]: 11, p[1]: 20, p[2]: 33, p[3]: 44, p[4]: 55}
+o = 0
+
+while o < len(x):
+    if p[o] == 'a':
+         break
+    if x[p[o]] == 20:
+        o += 1
+        continue
+    print(o)
+    print(p[o])
+    print(x[p[o]])
+    o += 1
+
+
+
+for q in p:
+    if q == 'a':
         break
-    print(s[x])
-    print(x)
-
-
+    if x[q] == 20:
+        continue
+    print(q)
+    print(x[q])
